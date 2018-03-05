@@ -200,7 +200,7 @@ nav a:hover {
 
   .headline {
     width:100%;
-    border: 1px solid black;
+    margin-left: 0px;
   }
 
   .headline h4 {
@@ -219,6 +219,10 @@ nav a:hover {
 }
 
 /* General Information */
+
+.information-mobile {
+  display: none;
+}
 
 .information {
   display: flex;
@@ -288,6 +292,7 @@ nav a:hover {
 }
 
 .sub-article-text {
+  margin: 0px;
   padding: 0px 16px;
 }
 
@@ -303,44 +308,84 @@ nav a:hover {
   max-width: 150px;
 }
 
+
 @media only screen and (max-width: 600px) {
+
+  .information {
+    display: none;
+  }
+
+  .information-mobile {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+  }
 
   .main-article {
     display: none;
   }
 
-
-
-
+  .sub-article-content {
+    display: block;
+    width:100%;
+    margin-bottom: 32px;
+    padding:0px;
   }
 
-  .sub-article-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .sub-article-content h3, span {
+    text-align: center;
+  }
+
+  .sub-article-content h3 {
+    margin-top: 32px;
+  }
+
+  .sub-article-content img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
   }
 
   .sub-article-text {
-    padding: 16px;
+    padding: 0px;
+    margin: 0px;
   }
 
   .sub-articles {
     display: block;
     width: 100%;
     background-color: white;
-    margin-left: 24px;
-    padding-top: 16px;
+    margin: 0px;
+    padding: 16px;
   }
 
   .sub-article-content-featured {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0px;
     background-color: white;
-    border: 1px solid black;
+  }
+
+  .sub-article-content-featured img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .sub-article-content-featured h3, span {
+    display: block;
+    text-align: center;
+  }
+
+  .sub-article-content-featured h3 {
+    margin-top: 32px;
   }
 
 }
-
 
 /* Learning Section */
 
@@ -417,7 +462,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 32px;
   }
+
   .course-mobile {
     display: flex;
     align-items: center;
@@ -425,14 +473,18 @@ nav a:hover {
     margin-bottom: 8px;
     margin-left: 16px;
     margin-right: 16px;
-    background-color: lightgrey;
-    border-radius: 4px;
-    border: 1px solid black;
+    background-color: grey;
+    border-radius: 8px;
   }
 
   .course-mobile span {
-    color: black;
+    color: white;
     margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .course-mobile:hover {
+    background-color: darkviolet;
   }
 
 }
@@ -534,16 +586,18 @@ nav a:hover {
   }
 
   .thesis-article {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   }
 
   .thesis-article video {
-    margin-right: 24px;
-    margin-bottom: 24px;
+    margin: 0px 0px 24px 0px;
+    width: 100%;
+    height: auto;
   }
 
 }
-
 
 footer {
   display: flex;

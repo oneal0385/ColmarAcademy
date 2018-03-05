@@ -13,11 +13,11 @@
 
     <header class="desktop-header">
       <div class="logo">
-      <img src="./resources/images/ic-logo.svg">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Logo">
       <span id="logo-color1">COLMAR</span><span id="logo-color2"> ACADEMY</span>
       </div>
       <nav>
-        <ul>
+        <ul role="presentation">
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
@@ -36,12 +36,12 @@
     </header>
 
 
-    <div class="main-content">
+    <div class="main-content" role="presentation">
 
     <!-- Main Banner -->
 
       <div class="main-banner">
-          <img src="./resources/images/banner.jpg">
+          <img src="./resources/images/banner.jpg" alt="Image of Students Studying Together">
         <div class="headline">
           <h1>Learn something new everyday</h1>
           <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -53,32 +53,67 @@
 
       <div class="information">
         <div class="main-article">
-          <img src="./resources/images/information-main.jpg">
+          <img src="./resources/images/information-main.jpg" alt="Image of Man Reading a Book">
           <h1>It doesn't hurt to keep practicing</h1>
           <span id="quotation">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
           <span class="author">Emanuel, Sr Strategist at Hiring.com</span>
         </div>
         <div class="sub-articles">
-          <div class="sub-article-content">
-            <img src="./resources/images/information-orientation.jpg">
-            <div class="sub-article-text">
+          <div class="sub-article-content" role="presentation">
+            <img class="img-desktop" src="./resources/images/information-orientation.jpg" alt="Image of Students Walking to Class">
+            <div class="sub-article-text" role="presentation">
               <h3>Orientation date</h3>
               <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
               <span><a href="#">Read more</a></span>
             </div>
           </div>
-          <div class="sub-article-content">
-            <img src="./resources/images/information-campus.jpg">
-            <div class="sub-article-text">
+          <div class="sub-article-content" role="presentation">
+            <img class="img-desktop" src="./resources/images/information-campus.jpg" alt="Image of Students in Library">
+            <div class="sub-article-text" role="presentation">
             <h3>Our campus</h3>
             <span>Find which campus is close by you</span>
             <span><a href="#">Read more</a></span>
             </div>
           </div>
-          <div class="sub-article-content-featured">
-            <img src="./resources/images/information-guest-lecture.jpg">
-            <div class="sub-article-text">
+          <div class="sub-article-content-featured" role="presentation">
+            <img class="img-desktop" src="./resources/images/information-guest-lecture.jpg" alt="Portrait Image of Oliver Slack">
+            <div class="sub-article-text" role="presentation">
             <h3>Our guest lecture</h3>
+            <span>Join a keynote with Oliver Slack about music in medical treatment<span>
+            <span><a href="#">Read more</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-mobile">
+        <div class="main-article">
+          <img src="./resources/images/information-main.jpg" alt="Image of Man Reading a Book">
+          <h1>It doesn't hurt to keep practicing</h1>
+          <span id="quotation">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+          <span class="author">Emanuel, Sr Strategist at Hiring.com</span>
+        </div>
+        <div class="sub-articles">
+          <div class="sub-article-content" role="presentation">
+            <img class="img-mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Image of Students Walking to Class">
+            <div class="sub-article-text" role="presentation">
+              <h3>Orientation date</h3>
+              <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
+              <span><a href="#">Read more</a></span>
+            </div>
+          </div>
+          <div class="sub-article-content" role="presentation">
+            <img class="img-mobile" src="./resources/images/information-campus-mobile.jpg" alt="Image of Students in Library">
+            <div class="sub-article-text" role="presentation">
+            <h3>Our campus</h3>
+            <span>Find which campus is close by you</span>
+            <span><a href="#">Read more</a></span>
+            </div>
+          </div>
+          <div class="sub-article-content-featured" role="presentation">
+            <img class="img-mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Portrait Image of Oliver Slack">
+            <div class="sub-article-text" role="presentation">
+            <h3>Special guest lecture</h3>
             <span>Join a keynote with Oliver Slack about music in medical treatment<span>
             <span><a href="#">Read more</a></span>
             </div>
@@ -89,59 +124,59 @@
       <!-- Learning Section -->
 
         <div class="learning">
-          <div class="learning-header">
+          <div class="learning-header" role="presentation">
             <h1>Start Learning</h1>
           </div>
-            <div class="gallery-container">
+            <div class="gallery-container" role="presentation">
 
-              <div class="gallery-row1">
+              <div class="gallery-row1" role="presentation">
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-software.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-software.jpg" alt="Image of a Desktop Computer">
                   <h3>Software engineering</h3>
                   <span>COURSES</span><br>
                   <span>Web Development, Mobile Development, iOTs, APIs</span>
                 </div>
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-computer-art.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-computer-art.jpg" alt="Image of Someone Using a Smartphone">
                   <h3>Computer art</h3>
                   <span>COURSES</span><br>
                   <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
                 </div>
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-design.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-design.jpg" alt="Image of a Photographer Adjusting His Camera's Settings">
                   <h3>Design</h3>
                   <span>COURSES</span><br>
                   <span>User Experience Design, User Research, Visual Design</span>
                 </div>
               </div>
 
-              <div class="gallery-row2">
+              <div class="gallery-row2" role="presentation">
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-data.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-data.jpg" alt="Image of Laptop Displaying a Graph of Data">
                   <h3>Data</h3>
                   <span>COURSES</span><br>
                   <span>Data Science, Big Data, SQL, Data Visualization</span>
                 </div>
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-business.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-business.jpg" alt="Image of Chess Pieces">
                   <h3>Business</h3>
                   <span>COURSES</span><br>
                   <span>Product Development, Business Development, Startup</span>
                 </div>
 
                 <div class="course">
-                  <div class="img-container"></div>
-                  <img src="./resources/images/course-marketing.jpg">
+                  <div class="img-container" role="presentation"></div>
+                  <img src="./resources/images/course-marketing.jpg" alt="Image of Person Using a Smart Watch">
                   <h3>Marketing</h3>
                   <span>COURSES</span><br>
                   <span>Analytics, Content Marketing, Mobile Marketing</span>
@@ -177,28 +212,28 @@
 
         <!-- Thesis Exhibit -->
 
-          <div id="thesis-header">
+          <div id="thesis-header" role="presentation">
             <h1>Thesis Exhibit</h1>
           </div>
-          <div class="thesis">
+          <div class="thesis" role="presentation">
             <div class="thesis-article">
-              <video src="./resources/videos/thesis.mp4" controls>Video not supported</video>
+              <video src="./resources/videos/thesis.mp4" alt="Video of Building Computer Simulation" controls>Video not supported</video>
               <h3>Reimagine urban</h3>
               <span>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
             </div>
 
             <div class="thesis-sub">
-              <div class="thesis-sub-content-featured">
-                <img src="./resources/images/thesis-fisma.jpg">
-                <div class="thesis-sub-article-text">
+              <div class="thesis-sub-content-featured" role="presentation">
+                <img src="./resources/images/thesis-fisma.jpg" alt="Image of a Person Sketching a Design">
+                <div class="thesis-sub-article-text" role="presentation">
                   <h3>Fisma: Design and Prototype</h3>
                   <span>Designer showcase of new prototype product</span>
                 </div>
               </div>
 
               <div class="thesis-sub-content">
-                <img src="./resources/images/thesis-now-and-then.jpg">
-                <div class="thesis-sub-article-text">
+                <img src="./resources/images/thesis-now-and-then.jpg" alt="Image of New York Skyline">
+                <div class="thesis-sub-article-text" role="presentation">
                 <h3>Now and then</h3>
                 <span>Research study about New York<span>
                 </div>
